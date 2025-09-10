@@ -25,26 +25,6 @@ const About: React.FC = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: 'María González',
-      course: 'Matemáticas - Bachillerato',
-      text: 'El profesor Carlos me ayudó a pasar de reprobar matemáticas a obtener 9.5. Su paciencia y metodología son increíbles.',
-      rating: 5
-    },
-    {
-      name: 'Juan Pérez',
-      course: 'Física - Universidad',
-      text: 'Las clases son muy dinámicas y claras. Logré entender conceptos que antes me parecían imposibles.',
-      rating: 5
-    },
-    {
-      name: 'Ana Rodríguez',
-      course: 'Preparación SAT',
-      text: 'Gracias a sus clases obtuve 1450 en el SAT. Su preparación es excepcional y muy completa.',
-      rating: 5
-    }
-  ];
 
   return (
     <section id="sobre-mi" className="about section">
@@ -107,25 +87,6 @@ const About: React.FC = () => {
           </div>
         </div>
         
-        <div className="testimonials">
-          <h3>Lo que dicen mis estudiantes</h3>
-          <div className="testimonials-grid">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="testimonial-card fade-in-up">
-                <div className="testimonial-rating">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="star">⭐</span>
-                  ))}
-                </div>
-                <p className="testimonial-text">"{testimonial.text}"</p>
-                <div className="testimonial-author">
-                  <strong>{testimonial.name}</strong>
-                  <span>{testimonial.course}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

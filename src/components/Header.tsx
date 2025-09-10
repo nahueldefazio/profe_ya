@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <a href="#servicios" className="nav-link">Servicios</a>
             <a href="#sobre-mi" className="nav-link">Sobre Mí</a>
             <a href="#contacto" className="nav-link">Contacto</a>
-            <a href="#contacto" className="btn btn-primary nav-cta">Clase Gratuita</a>
+            <a href="#contacto" className="btn btn-primary nav-cta">WhatsApp</a>
           </div>
           
           <div className="nav-toggle" onClick={toggleMenu}>

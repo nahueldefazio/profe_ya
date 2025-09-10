@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             
             <div className="hero-buttons fade-in-up">
               <a href="#contacto" className="btn btn-primary">
-                Clase Gratuita
+                Contactar Ahora
               </a>
               <a href="#servicios" className="btn btn-secondary">
                 Ver Servicios
